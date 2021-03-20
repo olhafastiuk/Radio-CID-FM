@@ -1,0 +1,69 @@
+.logo {
+    display: none;
+}
+
+.logo-tablet{
+    display: block;
+    height: 44px;
+    order: 2;
+}
+
+.soon {
+    order: 3;
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.checkbox-desktop {
+    display: none;
+}
+
+.checkbox-phone {
+    display: block;
+}
+
+#checkbox-phone {
+    display: none;
+}
+
+#checkbox-phone:checked ~ nav ul {
+    max-height: 100vh;
+    width: 85vw;
+    padding: 15px 10px;
+    transition: all  0.5s;
+}
+
+.menu-open {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    flex-direction: column;
+    background: #242530;
+    top: 70px;
+}
+
+.now-play{
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.now-song{
+    font-size: 12px;
+    line-height: 16.6px;  
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.a-line {
+    padding-bottom: 1px;
+    display: inline-block;
+}

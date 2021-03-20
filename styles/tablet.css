@@ -1,0 +1,51 @@
+.logo {
+    display: none;
+}
+
+.logo-tablet{
+    display: block;
+    width: 178px;
+    height: 64px;
+    order: 2;
+}
+
+.soon {
+    order: 3;
+    padding-left: 25%;
+}
+
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+}
+
+#checkbox-desktop {
+    display: none;
+}
+
+#checkbox-desktop:checked ~ nav ul {
+    max-height: 100vh;
+    padding: 15px 15px;
+    transition: all  0.5s;
+}
+
+.menu-open {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    flex-direction: column;
+    background: #242530;
+    top: 70px;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.a-line {
+    padding-bottom: 1px;
+}

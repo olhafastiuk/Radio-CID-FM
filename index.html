@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радіо CID FM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Play&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" media="screen and (max-width: 658px) " href="styles/phone.css">
+<link rel="stylesheet" media="screen and (max-width: 1340px) and (min-width: 659px)" href="styles/tablet.css">
+
+</head>
+<body>
+    <header id="header" class="gray-1 flex justify-content-center align-items-center p-20">
+
+        <img class="logo" width="178px" height="64px" src="images/header/logo.svg" alt="logo">
+        <img class="logo-tablet"  src="images/header/logo-tablet.svg" alt="logo">
+
+        <input type="checkbox" id="checkbox-desktop">
+        <nav class="flex align-items-center checkbox-desktop"> 
+            <ul class=" checkbox-desktop navbar flex pt-10">
+                <li><a class="checkbox-desktop ml-20 a-line" href="#">Головна</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Програми та подкасти</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Плейлист</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Співпраця</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Замовити пісню</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Замовити пісню</a></li>
+                <li><a class="checkbox-desktop ml-20" href="#">Купити атрибутику</a></li>
+            </ul>
+            
+            <label class="checkbox-desktop" for="checkbox-desktop">
+                <img class="checkbox-desktop menu-open" src="images/header/menu-open.svg" alt="">
+            </label>
+
+            <a class="ml-20" href="#">ENG</a>
+        </nav>
+
+        <input type="checkbox" id="checkbox-phone"> <!--for phone -->
+        <nav class="flex align-items-center checkbox-phone"> 
+            <ul class="checkbox-phone navbar flex pt-10">
+                <li><a class="checkbox-phone ml-20" href="#">ENG</a></li>
+                <li class="checkbox-phone ml-20 pt-10"></li>
+                <li><a class="checkbox-phone ml-20 a-line" href="#">Головна</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Програми та подкасти</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Плейлист</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Співпраця</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Замовити пісню</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Замовити пісню</a></li>
+                <li><a class="checkbox-phone ml-20" href="#">Купити атрибутику</a></li>
+            </ul>
+            <label class="checkbox-phone" for="checkbox-phone">
+                <img class="checkbox-phone menu-open" src="images/header/menu-open.svg" alt="">
+            </label>
+            
+        </nav>
+
+
+        <div class="soon flex align-items-center">
+            <a href="#"><div class="circle-vector flex-center"><img src="images/Vector.svg" alt="play"></div></a>
+            <div class="flex-column ml-20">
+                <p class="now-play">Зараз грає</p> 
+                <p class="now-song">Sia – My Old Santag...</p>
+            </div>
+        </div>
+
+    </header>
+
+
+</body>
+</html>
