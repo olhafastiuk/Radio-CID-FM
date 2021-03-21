@@ -1,0 +1,62 @@
+main {
+    width: 100vw;
+    background: linear-gradient(-269.86deg, #242530 6.44%, #171A1F 49.35%);
+    padding: 0 100px 0 100px;
+}
+
+.play {
+    background-color: #FFFFFF;
+    padding: 13px 11px 13px 19px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 291px;
+    position: relative;
+    z-index: 3;
+    
+}
+
+.play img {
+    filter: invert(65%) sepia(84%) saturate(3220%) hue-rotate(347deg) brightness(100%) contrast(93%);
+    width: 40px;
+    height: 44px;
+}
+
+.play-ellipse1 {
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    border: 12px solid rgba(255, 255, 255, 0.52) ;
+    background: none;
+    position: relative;
+    top: -100px;
+    z-index: 3;
+}
+
+.play-ellipse2 {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    position: relative;
+    top: -246px;
+    z-index: 3;
+}
+
+.volume {
+    position: relative;
+    top: -200px;
+}
+
+.man {
+    display: inline-block;
+    width: 600px;
+}
+
+.man img {
+    position: absolute;
+    top: -70px;   
+}
