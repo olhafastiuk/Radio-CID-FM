@@ -1,7 +1,8 @@
 main {
     width: 100vw;
-    background: linear-gradient(-269.86deg, #242530 6.44%, #171A1F 49.35%);
-    padding: 0 100px 0 100px;
+    height: 700px;
+    background: linear-gradient(46.07deg, #242530 6.44%, #171A1F 49.35%);
+    padding: 160px 160px 0 160px;
 }
 
 .play {
@@ -10,9 +11,11 @@ main {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-top: 291px;
-    position: relative;
     z-index: 3;
+    position: absolute;
+    top: 50%;
+    left:calc(50vw - 60px);
+    
     
 }
 
@@ -29,9 +32,10 @@ main {
     border-radius: 50%;
     border: 12px solid rgba(255, 255, 255, 0.52) ;
     background: none;
-    position: relative;
-    top: -100px;
+    position: absolute;
     z-index: 3;
+    top: calc(50% - 30px);
+    left:calc(50vw - 90px);
 }
 
 .play-ellipse2 {
@@ -41,22 +45,24 @@ main {
     border-radius: 50%;
     border: 8px solid rgba(255, 255, 255, 0.3);
     background: none;
-    position: relative;
-    top: -246px;
+    position: absolute;
     z-index: 3;
+    top: calc(50% - 44px);
+    left:calc(50vw - 104px);
 }
 
 .volume {
-    position: relative;
-    top: -200px;
-}
-
-.man {
-    display: inline-block;
-    width: 600px;
+    position: absolute;
+    z-index: 3;
+    left:calc(50vw - 110px);
+    bottom: calc(50% - 150px);
 }
 
 .man img {
     position: absolute;
-    top: -70px;   
+    top: 0;  
+    right: 0; 
+}
+.main-component {
+    padding-top: 150px;
 }
