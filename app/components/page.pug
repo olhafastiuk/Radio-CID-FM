@@ -5,7 +5,10 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Play&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
+        block link
         title 
             block title
     body
@@ -16,7 +19,7 @@ html(lang="en")
                         source(media="(max-width: 830px)", srcset="./images/header/logo-tablet.svg")
                         img(src="./images/header/logo.svg", alt="logo")
                 nav.menu 
-                    ul.memu__list     
+                    ul.menu__list     
                         li.menu__list-item
                              a.menu__list-link(href="#") Головна
                         li.menu__list-item
@@ -29,13 +32,14 @@ html(lang="en")
                             a.menu__list-link(href="#") Замовити пісню
                         li.menu__list-item
                             a.menu__list-link(href="#") Купити атрибутику
-                    .header__lang 
+                .header__lang-wrapp 
+                    .header__lang
                         a.header__lang-eng(href="#") ENG 
                         a.header__lang-ua(href="#") UA 
-                    .header__play
-                        a.header__play-btn(href="")
-                        .header__play-text 
-                            p Sia – My Old Santag...
+                .header__play
+                    a.header__play-btn(href="#")
+                    .header__play-text 
+                        p Sia – My Old Santag...
         main
             block content
         footer.page-section
@@ -93,5 +97,6 @@ html(lang="en")
 
 
 
-
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js") 
         script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+        script(src="./js/main.js")

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Play&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
     <title> Головна
     </title>
   </head>
@@ -14,7 +17,7 @@
             <source media="(max-width: 830px)" srcset="./images/header/logo-tablet.svg"><img src="./images/header/logo.svg" alt="logo">
           </picture></a>
         <nav class="menu"> 
-          <ul class="memu__list">    
+          <ul class="menu__list">    
             <li class="menu__list-item"><a class="menu__list-link" href="#">Головна</a></li>
             <li class="menu__list-item"><a class="menu__list-link" href="#">Програми та подкасти</a></li>
             <li class="menu__list-item"><a class="menu__list-link" href="#">Плейлист</a></li>
@@ -22,13 +25,15 @@
             <li class="menu__list-item"><a class="menu__list-link" href="#">Замовити пісню</a></li>
             <li class="menu__list-item"><a class="menu__list-link" href="#">Купити атрибутику</a></li>
           </ul>
-          <div class="header__lang"> <a class="header__lang-eng" href="#">ENG </a><a class="header__lang-ua" href="#">UA </a></div>
-          <div class="header__play"><a class="header__play-btn" href=""></a>
-            <div class="header__play-text"> 
-              <p>Sia – My Old Santag...</p>
-            </div>
-          </div>
         </nav>
+        <div class="header__lang-wrapp"> 
+          <div class="header__lang"><a class="header__lang-eng" href="#">ENG </a><a class="header__lang-ua" href="#">UA </a></div>
+        </div>
+        <div class="header__play"><a class="header__play-btn" href="#"></a>
+          <div class="header__play-text"> 
+            <p>Sia – My Old Santag...</p>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -258,6 +263,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

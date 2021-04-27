@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.header__play-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+.header__lang, .menu {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page-section {
+  padding: 0 10%;
+}
+
+.header {
+  background: #242530;
+  position: relative;
+  padding: 8px 24px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__lang-ua {
+  display: none;
+}
+
+.header__lang {
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.header__lang:hover {
+  color: #F58122;
+}
+
+.header__play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__play-btn {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(90deg, #F58122 0%, #F4A05B 23.75%, #F58122 48.22%, #F58122 48.23%, #F4A05B 75.31%, #F58122 100%);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.header__play-btn::after {
+  content: "";
+  display: block;
+  margin: 6px 5px 6px 9px;
+  background-image: url(../images/header/play-white.svg);
+  width: 18px;
+  height: 20px;
+}
+
+.header__play-text {
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__play-text::before {
+  content: "Зараз грає";
+  display: block;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.menu {
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list-item {
+  padding-bottom: 4px;
+}
+
+.menu__list-item:not(:first-child) {
+  padding-left: 32px;
+  align-items: center;
+}
+
+.menu__list-link:hover {
+  color: #F58122;
+}
+
+.change-lang > .header__lang-eng {
+  display: none;
+}
+
+.change-lang > .header__lang-ua {
+  display: block;
+}
+
+.play::after {
+  content: "";
+  background-image: none;
+  height: 8px;
+  width: 16px;
+  margin: 12px 8px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.menu__list .menu__list-item:first-child::after {
+  content: '';
+  display: block;
+  width: 67px;
+  height: 2px;
+  background-color: #fff;
+}
