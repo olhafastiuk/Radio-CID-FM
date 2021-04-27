@@ -1,5 +1,10 @@
 @charset "UTF-8";
-.header__play-text {
+.footer__block-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.header__play-text, .footer__block-title, .footer__bottom {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -7,6 +12,11 @@
 .header__lang, .menu {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
+}
+
+button {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
 }
 
 html {
@@ -36,6 +46,16 @@ h4,
 h5,
 h6 {
   font-size: inherit;
+}
+
+button {
+  font-size: 18px;
+  line-height: 110%;
+  color: #242530;
+  background: #F58122;
+  border: 2px solid #F58122;
+  border-radius: 8px;
+  height: 44px;
 }
 
 body {
@@ -122,10 +142,6 @@ body {
   align-items: center;
 }
 
-.menu__list-item {
-  padding-bottom: 4px;
-}
-
 .menu__list-item:not(:first-child) {
   padding-left: 32px;
   align-items: center;
@@ -159,4 +175,79 @@ body {
   width: 67px;
   height: 2px;
   background-color: #fff;
+}
+
+.footer {
+  background: #242530;
+  width: 100vw;
+  padding: 40px 0 32px 0;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-fb {
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.footer-fb:hover circle {
+  stroke: #F58122;
+}
+
+.footer-fb:hover path {
+  fill: #F58122;
+}
+
+.footer__block-title {
+  align-self: flex-start;
+  font-size: 20px;
+  line-height: 140%;
+  color: #E9E9E9;
+  margin-bottom: 28px;
+}
+
+.footer__block-text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #E9E9E9;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  width: 287px;
+  margin-bottom: 15px;
+}
+
+.footer__block-text img {
+  position: relative;
+  left: -13px;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__block-btn {
+  background: transparent;
+  margin-bottom: 14px;
+  color: white;
+  font-size: 16px;
+  line-height: 125%;
+  width: 162px;
+}
+
+.footer__bottom {
+  font-size: 16px;
+  line-height: 150%;
+  width: 314px;
+  color: #E9E9E9;
 }

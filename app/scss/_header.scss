@@ -69,10 +69,6 @@
         align-items: center;
     }
 
-    &__list-item{
-        padding-bottom: 4px;
-    }
-
     &__list-item:not(:first-child){
         padding-left: 32px;
         align-items: center;

@@ -25,6 +25,17 @@ h6{
     font-size: inherit;
 }
 
+button{
+    @extend%play;
+    font-size: 18px;
+    line-height: 110%;
+    color: #242530;
+    background: #F58122;
+    border: 2px solid #F58122;
+    border-radius: 8px;
+    height: 44px;
+}
+
 body{
     overflow-x: hidden;
 }
