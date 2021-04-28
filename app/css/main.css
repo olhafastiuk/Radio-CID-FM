@@ -51,11 +51,18 @@ h6 {
 button {
   font-size: 18px;
   line-height: 110%;
+  outline: none;
   color: #242530;
   background: #F58122;
   border: 2px solid #F58122;
   border-radius: 8px;
   height: 44px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #CA6D20;
+  border: #F58122;
 }
 
 body {
@@ -70,6 +77,7 @@ body {
 .header {
   background: #242530;
   position: relative;
+  z-index: 1;
   padding: 8px 24px;
 }
 
@@ -86,6 +94,7 @@ body {
 .header__lang {
   font-size: 18px;
   line-height: 135%;
+  margin: 0 1.5vw;
 }
 
 .header__lang:hover {
@@ -135,6 +144,7 @@ body {
 .menu {
   font-size: 18px;
   line-height: 135%;
+  width: 75vw;
 }
 
 .menu__list {
@@ -168,6 +178,10 @@ body {
   margin: 12px 8px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+}
+
+.logo__img {
+  margin-right: 1.5vw;
 }
 
 .menu__list .menu__list-item:first-child::after {
@@ -205,6 +219,10 @@ body {
 
 .top__inner-fb, .top__inner-playlist {
   margin-right: 40px;
+  position: relative;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
 }
 
 .top__inner-fb:hover path, .top__inner-playlist:hover path {
@@ -280,6 +298,43 @@ body {
   padding: 24px;
   font-size: 16px;
   line-height: 125%;
+}
+
+.top__tracks-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 30px;
+}
+
+.top__tracks-2::before {
+  content: "";
+  width: 24px;
+  height: 27px;
+  background-image: url(../images/main/play-orange.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.top__dec-1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.top__dec-2 {
+  position: absolute;
+  top: 385px;
+  left: -1vw;
+}
+
+.top__dec-3 {
+  position: absolute;
+  top: 420px;
+  right: 0;
 }
 
 .playBig > .top__inner__play-external path {
@@ -364,6 +419,7 @@ body {
 }
 
 .order {
+  position: relative;
   background: #242530;
   display: flex;
   align-items: center;
@@ -380,6 +436,8 @@ body {
 }
 
 .order__block {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -410,6 +468,20 @@ body {
 .order__btn {
   width: 12vw;
   margin-top: 25px;
+}
+
+.order__dec-1 {
+  position: absolute;
+  z-index: 0;
+  left: -110px;
+  top: -150px;
+}
+
+.order__dec-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .cooperation {
@@ -476,6 +548,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1289px;
+  margin: 0 auto;
 }
 
 .program__gallery-title {
@@ -493,7 +567,7 @@ body {
 .program__gallery-caption {
   visibility: hidden;
   position: relative;
-  top: -110px;
+  top: -90px;
   background-color: white;
   border-radius: 0px 0px 9px 9px;
   width: 258px;
@@ -510,7 +584,7 @@ body {
   z-index: 0;
   border-radius: 9px;
   width: 258px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .program__gallery-img:hover + .program__gallery-caption {
@@ -588,12 +662,17 @@ body {
 }
 
 .footer {
+  position: relative;
   background: #242530;
   width: 100vw;
   padding: 40px 0 32px 0;
+  height: 400px;
+  margin-bottom: 0;
 }
 
 .footer__top {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -646,6 +725,10 @@ body {
   flex-direction: column;
 }
 
+.footer-link:hover {
+  color: #F58122;
+}
+
 .footer__block-btn {
   background: transparent;
   margin-bottom: 14px;
@@ -656,8 +739,30 @@ body {
 }
 
 .footer__bottom {
+  position: relative;
+  z-index: 1;
   font-size: 16px;
   line-height: 150%;
   width: 314px;
   color: #E9E9E9;
+}
+
+.footer__dec-1 {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+}
+
+.footer__dec-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 608px;
+}
+
+.footer__dec-3 {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: -100px;
 }

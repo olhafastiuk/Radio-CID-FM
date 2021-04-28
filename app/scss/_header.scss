@@ -1,6 +1,7 @@
 .header{
     background: #242530;
     position: relative;
+    z-index: 1;
     padding: 8px 24px;
 
     &__inner{
@@ -15,6 +16,7 @@
         @extend%ssp-600;
         font-size: 18px;
         line-height: 135%;
+        margin:0 1.5vw;
         &:hover{
             color: #F58122;
         }
@@ -62,6 +64,7 @@
     @extend%ssp-600;
     font-size: 18px;
     line-height: 135%;
+    width: 75vw;
     
     &__list{
         display: flex;
@@ -96,3 +99,6 @@
             border-top: 2px solid white;
             border-bottom: 2px solid white;
         }
+.logo__img{
+    margin-right: 1.5vw;
+}

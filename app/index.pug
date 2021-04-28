@@ -6,6 +6,9 @@ block title
     | Головна
 block content
     section.page-section.top
+        img.top__dec-1(src="./images/main/decoration-circle-1.svg", alt="")
+        img.top__dec-2(src="./images/main/decoration-circle-2.svg", alt="")
+        img.top__dec-3(src="./images/main/decoration-circle-3.svg", alt="")
         .top__inner
             .top__inner-info
                 h1.top__inner-text Слухати радіо твого улюбленого міста CID FM
@@ -29,7 +32,8 @@ block content
                         path(d="M156 80C156 121.974 121.974 156 80 156C38.0264 156 4 121.974 4 80C4 38.0264 38.0264 4 80 4C121.974 4 156 38.0264 156 80Z" stroke="white" stroke-opacity="0.3" stroke-width="8")
                     svg.top__inner__play-internal(width="132" height="132" viewBox="0 0 132 132" fill="none" xmlns="http://www.w3.org/2000/svg")
                         path(d="M126 66C126 99.1371 99.1371 126 66 126C32.8629 126 6 99.1371 6 66C6 32.8629 32.8629 6 66 6C99.1371 6 126 32.8629 126 66Z" stroke="white" stroke-opacity="0.52" stroke-width="12")
-                    .top__inner__play-base
+                    a(href="#").top__inner__play-base
+                        
                 input.top__inner__play-slider(type="range" min="1" max="100" value="50" class="slider")
                 
         .top__tracks
@@ -37,8 +41,9 @@ block content
                 p Попередній трек
                 p 23:40 ⠀A Fine Frenzy – Winter White
             .top__tracks-2 
-                p Зараз грає
-                p 23:42 ⠀Sia – My Old Santa Claus
+                .top__tracks-2-text
+                    p Зараз грає
+                    p 23:42 ⠀Sia – My Old Santa Claus
             .top__tracks-3  
                 p Наступний трек
                 p 23:46 ⠀O.TORVALD – Крик
@@ -55,6 +60,7 @@ block content
                 .carousel-cell 
                     img(src="./images/main/slider-4.jpg", alt="")
     section.page-section.order
+        img.order__dec-1(src="./images/main/decoration-circle-1.svg", alt="")
         .order__block 
             h2.order__title Замовити пісню
             .order__marker
@@ -66,6 +72,7 @@ block content
             .order__marker
             p.order__text Ми підготували для вас дещо цікаве і дуже цінне для усіх поціновувачів радіо CID FM. Станьте частинкою рідної та унікальної радіоспільноти CID FM.
             button.order__btn Замовити
+        img.order__dec-2(src="./images/main/decoration-order-2.svg", alt="")
     section.page-section 
         .cooperation
             img.cooperation__img(src="./images/main/cooperation.jpg", alt="Cooperation")

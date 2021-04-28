@@ -1,8 +1,13 @@
 .footer{
+    position: relative;
     background: #242530;
     width: 100vw;
     padding: 40px 0 32px 0;
+    height: 400px ;
+    margin-bottom: 0;
     &__top{
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: space-between;
     }
@@ -49,6 +54,9 @@
     &-link{
         display: flex;
         flex-direction: column;
+        &:hover{
+            color: #F58122;
+        }
     }
 
     &__block-btn{
@@ -61,10 +69,29 @@
     }
 
     &__bottom{
+        position: relative;
+        z-index: 1;
         @extend%ssp-400;
         font-size: 16px;
         line-height: 150%;
         width: 314px;
         color: #E9E9E9;
+    }
+    &__dec-1{
+        position: absolute;
+        z-index: 0;
+        left: 0;
+    }
+    &__dec-2{
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left:608px;
+    }
+    &__dec-3{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        top: -100px;
     }
 }
