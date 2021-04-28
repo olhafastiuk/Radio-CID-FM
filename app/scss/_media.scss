@@ -193,6 +193,16 @@
         }
        
     }
+
+    .program{
+        &__gallery{
+            max-width: 770px;
+        }
+        &__title{   
+            font-size: 28px;
+            line-height: 130%;
+        }
+    }
     
 
 }

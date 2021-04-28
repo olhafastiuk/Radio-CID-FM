@@ -1010,6 +1010,13 @@ body {
     left: -15vw;
     width: 55vw;
   }
+  .program__gallery {
+    max-width: 770px;
+  }
+  .program__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
 }
 
 .menu-open + .menu__list {
