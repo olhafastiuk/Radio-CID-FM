@@ -437,28 +437,28 @@ body {
   width: 100%;
 }
 
-.flickity-page-dots .dot {
+.sliders .flickity-page-dots .dot {
   background: transparent;
 }
 
-.flickity-button {
+.sliders .flickity-button {
   background: none;
 }
 
-.flickity-button-icon {
+.sliders .flickity-button-icon {
   fill: black;
 }
 
-.flickity-prev-next-button {
+.sliders .flickity-prev-next-button {
   width: 35px;
   height: 70px;
 }
 
-.flickity-prev-next-button.previous {
+.sliders .flickity-prev-next-button.previous {
   left: -90px;
 }
 
-.flickity-prev-next-button.next {
+.sliders .flickity-prev-next-button.next {
   right: -90px;
 }
 
@@ -656,18 +656,9 @@ body {
   margin-top: 80px;
 }
 
-.news__block {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  margin: 52px 0;
-}
-
 .news__item {
   display: flex;
   flex-direction: column;
-  width: 25vw;
 }
 
 .news__item-img {
@@ -703,6 +694,29 @@ body {
 .news__btn {
   margin-bottom: 80px;
   width: 12vw;
+}
+
+.news .main-carousel {
+  width: 100%;
+  margin: 52px 0;
+}
+
+.news .carousel-cell {
+  width: 30%;
+  margin-right: 3.3%;
+}
+
+.news .flickity-page-dots .dot {
+  background: transparent;
+}
+
+.news .flickity-button {
+  display: none;
+  background: none;
+}
+
+.news .flickity-button-icon {
+  fill: black;
 }
 
 .footer {
@@ -935,9 +949,6 @@ body {
     width: 100vw;
     margin-bottom: 70px;
   }
-  .flickity-page-dots .dot {
-    background: transparent;
-  }
   .flickity-button {
     display: none;
   }
@@ -1016,6 +1027,49 @@ body {
   .program__title {
     font-size: 28px;
     line-height: 130%;
+  }
+  .news__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .news .main-carousel {
+    width: 100vw;
+  }
+  .news .carousel-cell {
+    width: 30%;
+    margin-left: 5%;
+  }
+  .news .carousel-cell .is-selected {
+    margin-right: 50%;
+  }
+  .news .flickity-page-dots .dot {
+    background: #525257;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+  }
+  .news .flickity-page-dots .is-selected {
+    background: #F58122;
+  }
+  .news .flickity-button {
+    display: inline-block;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 8px;
+    width: 20%;
+    height: 100%;
+  }
+  .news .flickity-button-icon {
+    fill: black;
+    width: 16px;
+    height: 32px;
+    top: 50%;
+  }
+  .news .flickity-prev-next-button.previous {
+    left: 0;
+  }
+  .news .flickity-prev-next-button.next {
+    right: 0;
   }
 }
 
