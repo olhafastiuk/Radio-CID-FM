@@ -18,3 +18,7 @@ $('.carousel').flickity({
       x3: 20
     }
   });
+
+$('.menu').click( function(){
+    $('.header__menu-btn').toggleClass('menu-open');
+});

@@ -14,11 +14,13 @@ html(lang="en")
     body
         header.header 
             .header__inner 
-                a(class="logo" href="#") 
-                    picture.logo__img 
+                a.logo__img(class="logo" href="#") 
+                    picture 
                         source(media="(max-width: 830px)", srcset="./images/header/logo-tablet.svg")
                         img(src="./images/header/logo.svg", alt="logo")
-                nav.menu 
+                nav.menu
+                    .header__menu-btn
+                        span
                     ul.menu__list     
                         li.menu__list-item
                              a.menu__list-link(href="#") Головна

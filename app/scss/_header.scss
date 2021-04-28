@@ -24,7 +24,6 @@
 
     &__play{
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
     &__play-btn{
@@ -58,6 +57,39 @@
             line-height: 140%;
         }
     }
+    &__menu-btn {
+        display: none;
+        cursor: pointer;
+        span{
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: white;
+            border-radius: 100px;
+            transition: all 0.3s ;
+        }
+        
+        &::before{
+            content: "";
+            display: block;
+            margin-bottom: 8px;
+            width: 40px;
+            height: 4px;
+            background: white;
+            border-radius: 100px;
+            transition: all 0.7s ;
+        }
+        &::after{
+            content: "";
+            display: block;
+            margin-top: 8px;
+            width: 40px;
+            height: 4px;
+            background: white;
+            border-radius: 100px;
+            transition: all 0.7s ;
+        }
+    }
 }
 
 .menu{
@@ -72,10 +104,6 @@
         align-items: center;
     }
 
-    &__list-item:not(:first-child){
-        padding-left: 32px;
-        align-items: center;
-    }
     &__list-link{
         &:hover{
             color: #F58122;

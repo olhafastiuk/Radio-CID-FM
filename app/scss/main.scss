@@ -9,7 +9,11 @@
     width: 67px;
     height: 2px;
     background-color: #fff;
-    // margin-top: 4px;
+}
+@media (max-width: 1350px) {
+    .menu__list .menu__list-item:first-child::after{
+        display: none;
+    }
 }
 
 .top{
