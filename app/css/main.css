@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.footer__block-text {
+.news__item-text, .footer__block-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
 
-.header__play-text, .order__text, .cooperation__text, .program__gallery-text, .footer__block-title, .footer__bottom {
+.header__play-text, .order__text, .cooperation__text, .program__gallery-text, .news__item-title, .footer__block-title, .footer__bottom {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title, .news__title, .news__item-time {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -408,7 +408,7 @@ body {
 }
 
 .order__btn {
-  width: 40%;
+  width: 12vw;
   margin-top: 25px;
 }
 
@@ -455,7 +455,7 @@ body {
 
 .cooperation__btn {
   margin-top: 20px;
-  width: 160px;
+  width: 12vw;
 }
 
 .program {
@@ -518,9 +518,73 @@ body {
 }
 
 .program__btn {
-  width: 10vw;
+  width: 12vw;
   align-self: center;
   margin-bottom: 80px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news__title {
+  font-size: 32px;
+  line-height: 150%;
+  color: #242530;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.news__block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 52px 0;
+}
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+.news__item-img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.news__item-caption {
+  background: white;
+  padding: 8px;
+}
+
+.news__item-title {
+  font-size: 16px;
+  line-height: 150%;
+  color: #242530;
+  margin-bottom: 4px;
+}
+
+.news__item-text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #525257;
+  margin-bottom: 4px;
+}
+
+.news__item-time {
+  text-align: right;
+  font-size: 14px;
+  line-height: 140%;
+  color: #525257;
+}
+
+.news__btn {
+  margin-bottom: 80px;
+  width: 12vw;
 }
 
 .footer {
