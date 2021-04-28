@@ -1,8 +1,5 @@
 @media (max-width: 1350px) {
     @import "vars";
-    .menu__list-iteam::after{
-        display: none;
-    }
     .menu{
         width: 10vw;
         transition: all 1s ;
@@ -32,8 +29,30 @@
         order: 3;
         width: 80vw;
     }
+    .footer{
+        &__block__btns{
+            position: absolute;
+            left:0;
+            top: 160px;   
+        }
+        &__block__menu{
+            position: relative;
+            order: 2;
+            margin-left: 8vw;
+        }
+        &__block__contact{
+            position: relative;
+            order:3;
+        }
+        &__logo{
+            width: 153px;
+        }
+        &__block-text{
+            width: 190px;
+        }
+        
+    }
 }
-
 .menu-open + .menu__list{
     display: block;
     position: fixed;

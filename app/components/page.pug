@@ -51,7 +51,7 @@ html(lang="en")
             .page-section
                 .footer__top
                     .footer__block 
-                        img(src="./images/header/logo.svg", alt="logo")
+                        img.footer__logo(src="./images/header/logo.svg", alt="logo")
                         svg.footer-fb(width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg")
                             circle(cx="32" cy="32" r="31.5" stroke="white")
                             g(clip-path="url(#clip0)")
@@ -59,21 +59,20 @@ html(lang="en")
                             defs
                                 clipPath(id="clip0")
                                 rect(width="32" height="32" fill="white" transform="translate(16 16)")
-                    .footer__block
+                    .footer__block.footer__block__contact
                         h3.footer__block-title Контакти
                         .footer__block-text 
                             img.footer-icon(src="./images/footer/icon-1.svg", alt="")
                             .footer-link 
                                 a(href="tel:+3800968696005") +38 (096) 869 6005
                                 a(href="tel:+380332788278") +38 (0332) 78 82 78
-
                         .footer__block-text 
                             img.footer-icon(src="./images/footer/icon-2.svg", alt="")
                             a.footer-link(href="mailto:radiosidfm@gmail.com") radiosidfm@gmail.com
                         .footer__block-text 
                             img.footer-icon(src="./images/footer/icon-3.svg", alt="")
                             a.footer-link(href="https://www.google.com/maps/place/%D0%A0%D0%B0%D0%B4%D1%96%D0%BE+%D0%A1%D1%96%D0%94+FM/@50.7713975,25.351746,17z/data=!4m13!1m7!3m6!1s0x472597466b3a5acd:0xa0539c616323406a!2s18V,+Konyakina+St,+18%D0%92,+Luts'k,+Volyns'ka+oblast,+43000!3b1!8m2!3d50.7713941!4d25.3539347!3m4!1s0x472597e44f7c0899:0x11761cbf73de1ea0!8m2!3d50.7707096!4d25.3556543") вул.Конякіна,18в. Луцьк. Волинська обл., Україна. 43024
-                    .footer__block
+                    .footer__block.footer__block__menu
                         h3.footer__block-title Меню
                         .footer__block-text 
                             .footer-link 
@@ -93,7 +92,7 @@ html(lang="en")
                         .footer__block-text 
                             .footer-link 
                                 a(href="#") Купити атрибутику
-                    .footer__block
+                    .footer__block.footer__block__btns
                         button.footer__block-btn Замовити пісню
                         button.footer__block-btn Купити атрибутику
                        
