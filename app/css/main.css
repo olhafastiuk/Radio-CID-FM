@@ -4,7 +4,7 @@
   font-weight: 300;
 }
 
-.header__play-text, .order__text, .footer__block-title, .footer__bottom {
+.header__play-text, .order__text, .cooperation__text, .footer__block-title, .footer__bottom {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1 {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -410,6 +410,52 @@ body {
 .order__btn {
   width: 40%;
   margin-top: 25px;
+}
+
+.cooperation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cooperation__img {
+  position: relative;
+  left: -10vw;
+  width: 50vw;
+}
+
+.cooperation__block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -8vw;
+}
+
+.cooperation__title {
+  font-size: 32px;
+  line-height: 150%;
+  color: #242530;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.cooperation__text {
+  font-size: 18px;
+  line-height: 135%;
+  color: #242530;
+  margin-top: 8px;
+  width: 39vw;
+}
+
+.cooperation__text1 {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.cooperation__btn {
+  margin-top: 20px;
+  width: 160px;
 }
 
 .footer {
