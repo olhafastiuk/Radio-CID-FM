@@ -155,6 +155,44 @@
             top: 270px;
         }
     }
+
+    .cooperation{
+        align-items: start;
+        padding-top: 100px;
+        padding-bottom: 0;
+        &__title{
+            font-size: 28px;
+            line-height: 130%;
+            margin-top: 52px;
+            position: relative;
+            left: -20vw;
+            margin-bottom: 0;
+            padding-bottom: -70px;
+            top: -35px;
+        }
+        &__block{
+            top: -90px;
+            left: -10vw;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &__text1{
+            font-size: 18px;
+            line-height: 110%;
+            margin-bottom: 12px;
+        }
+        &__btn{
+            margin-top: 20px;
+            width: 160px;
+        }
+        &__img{
+            left: -15vw;
+            width: 55vw;
+        }
+       
+    }
     
 
 }
