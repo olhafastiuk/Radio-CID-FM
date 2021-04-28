@@ -433,6 +433,14 @@ body {
   margin-left: 5%;
 }
 
+.sliders .carousel-cell img {
+  width: 100%;
+}
+
+.flickity-page-dots .dot {
+  background: transparent;
+}
+
 .flickity-button {
   background: none;
 }
@@ -922,6 +930,25 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  .sliders .main-carousel {
+    width: 100vw;
+    margin-bottom: 70px;
+  }
+  .flickity-page-dots .dot {
+    background: transparent;
+  }
+  .flickity-button {
+    display: none;
+  }
+  .flickity-page-dots .dot {
+    background: #525257;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+  }
+  .flickity-page-dots .is-selected {
+    background: #F58122;
   }
 }
 

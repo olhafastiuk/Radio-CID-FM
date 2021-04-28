@@ -214,8 +214,14 @@
     & .carousel-cell{
         width: 25%;
         margin-left: 5%;
+        & img{
+            width: 100%;
+        }
     }
     
+}
+.flickity-page-dots .dot{
+    background: transparent;
 }
 .flickity-button {
         background: none;
