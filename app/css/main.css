@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3 {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -60,6 +60,7 @@ button {
 
 body {
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 .page-section {
@@ -175,6 +176,144 @@ body {
   width: 67px;
   height: 2px;
   background-color: #fff;
+}
+
+.top {
+  background-image: url(../images/main/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top__inner {
+  display: flex;
+  padding-top: 88px;
+}
+
+.top__inner-text {
+  font-size: 48px;
+  line-height: 150%;
+  width: 33vw;
+}
+
+.top__inner-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.top__inner-fb, .top__inner-playlist {
+  margin-right: 40px;
+}
+
+.top__inner-fb:hover path, .top__inner-playlist:hover path {
+  fill: #F58122;
+}
+
+.top__inner-fb:hover circle, .top__inner-playlist:hover circle {
+  stroke: #F58122;
+}
+
+.top__inner__play {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 260px;
+  left: calc((100vw - 160px)/2);
+  display: flex;
+  flex-direction: column;
+}
+
+.top__inner__play-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__inner__play-internal {
+  position: relative;
+  top: -146px;
+}
+
+.top__inner__play-base {
+  position: relative;
+  top: -247px;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 100px;
+}
+
+.top__inner__play-base::after {
+  content: url(../images/main/play-orange.svg);
+  position: relative;
+  width: 40px;
+  height: 44px;
+  top: 13px;
+  left: 19px;
+}
+
+.top__inner__play-slider {
+  position: relative;
+  top: -140px;
+}
+
+.top__tracks {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 80vw;
+  position: relative;
+  top: 32px;
+  z-index: 1;
+}
+
+.top__tracks-1, .top__tracks-2, .top__tracks-3 {
+  background: #242530;
+  border-radius: 6px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.playBig > .top__inner__play-external path {
+  stroke: #F58122;
+}
+
+.playBig > .top__inner__play-internal path {
+  stroke: #F58122;
+}
+
+.playBig::before {
+  content: " ";
+  height: 4px;
+  width: 36px;
+  position: absolute;
+  top: 75px;
+  z-index: 1;
+  background-color: #F58122;
+  border-radius: 8px;
+}
+
+.playBig::after {
+  content: " ";
+  height: 4px;
+  width: 36px;
+  position: absolute;
+  top: 87px;
+  z-index: 1;
+  background-color: #F58122;
+  border-radius: 8px;
+}
+
+.playBig > .top__inner__play-base::after {
+  content: "";
 }
 
 .footer {
