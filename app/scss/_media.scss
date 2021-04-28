@@ -52,10 +52,70 @@
         }
         
     }
+
+    .top{
+        // background-size: 120%;
+        // background-position-y: 0;
+        &__inner{
+            padding-top: 40px;
+        }
+        &__inner-text{
+            font-size: 32px;
+            line-height: 150%;
+            width: 38vw;
+        }
+        &__inner-btn{
+            margin-top: 200px;
+            margin-bottom: 0;
+        }
+        &__inner__play{
+            top: 150px;
+        }
+        &__inner__play-slider{
+            top: -170px;
+        }
+        &__tracks{
+            width: 96vw;
+            position: relative;
+            left: -8vw;
+            z-index: 1;
+        }
+        &__tracks-1,
+        &__tracks-2,
+        &__tracks-3{
+            font-size: 14px;
+            line-height: 140%;
+            padding: 16px 12px;
+            width: 31vw;
+        }
+        &__tracks-2::before{
+            margin-right: 14px;
+            width: 16px;
+            height: 18px;
+        }
+        &__dec-1{
+            top: -150px;
+            left:-115px;
+        }
+        &__dec-2{
+            position: absolute;
+            top: 200px;
+            left:-180px;
+        }
+        &__dec-3{
+            position: absolute;
+            bottom: 0;
+            right:0;
+        }
+    }
+
 }
+
+
+
 .menu-open + .menu__list{
     display: block;
-    position: fixed;
+    position: absolute;
     @extend %play;
     font-size: 20px;
     line-height: 140%;

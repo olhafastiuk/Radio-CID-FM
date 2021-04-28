@@ -17,6 +17,7 @@
 }
 
 .top{
+    position: relative;
     background-image: url(../images/main/bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +45,7 @@
     &__inner-playlist{
         margin-right: 40px;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         width: 64px;
         height: 64px;
         &:hover path{
@@ -133,7 +134,7 @@
             height: 27px;
             background-image: url(../images/main/play-orange.svg);
             background-size: contain;
-            background-repeat: no-repeat;
+            // background-repeat: no-repeat;
             background-position: center;
             margin-right: 30px;
         }
@@ -150,7 +151,7 @@
     }
     &__dec-3{
         position: absolute;
-        top: 420px;
+        bottom: 0;
         right:0;
     }
         
@@ -216,23 +217,23 @@
     }
     
 }
-// .flickity-button {
-//         background: none;
-//         &-icon {
-//             fill: black;
-//         }
-//     }
-// .flickity-prev-next-button {
-//     width: 35px;
-//     height: 70px;
-// }
+.flickity-button {
+        background: none;
+        &-icon {
+            fill: black;
+        }
+    }
+.flickity-prev-next-button {
+    width: 35px;
+    height: 70px;
+}
 
-// .flickity-prev-next-button.previous {
-//   left: -90px;
-// }
-// .flickity-prev-next-button.next {
-//   right: -90px;
-// }
+.flickity-prev-next-button.previous {
+  left: -90px;
+}
+.flickity-prev-next-button.next {
+  right: -90px;
+}
 
 .order{
     position: relative;
