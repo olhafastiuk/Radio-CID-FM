@@ -148,6 +148,50 @@
     }
 }
 
+.sliders{
+    margin-top:64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+        text-align: center;
+        @extend%play;
+        font-size: 32px;
+        line-height: 150%;
+        color: #242530;
+        margin-bottom: 32px;
+    }
+
+    & .main-carousel{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    & .carousel-cell{
+        width: 25%;
+        margin-left: 5%;
+    }
+    
+}
+.flickity-button {
+        background: none;
+        &-icon {
+            fill: black;
+        }
+    }
+.flickity-prev-next-button {
+    width: 35px;
+    height: 70px;
+}
+
+.flickity-prev-next-button.previous {
+  left: -90px;
+}
+.flickity-prev-next-button.next {
+  right: -90px;
+}
 
 
 

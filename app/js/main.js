@@ -9,3 +9,12 @@ $('.header__play').click( function(){
 $('.top__inner__play').click( function(){
     $('.top__inner__play-btn').toggleClass('playBig');
 });
+
+$('.carousel').flickity({
+    arrowShape: {
+      x0: 20,
+      x1: 60, y1: 50,
+      x2: 60, y2: 50,
+      x3: 20
+    }
+  });

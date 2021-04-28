@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3 {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -314,6 +314,53 @@ body {
 
 .playBig > .top__inner__play-base::after {
   content: "";
+}
+
+.sliders {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliders__text {
+  text-align: center;
+  font-size: 32px;
+  line-height: 150%;
+  color: #242530;
+  margin-bottom: 32px;
+}
+
+.sliders .main-carousel {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.sliders .carousel-cell {
+  width: 25%;
+  margin-left: 5%;
+}
+
+.flickity-button {
+  background: none;
+}
+
+.flickity-button-icon {
+  fill: black;
+}
+
+.flickity-prev-next-button {
+  width: 35px;
+  height: 70px;
+}
+
+.flickity-prev-next-button.previous {
+  left: -90px;
+}
+
+.flickity-prev-next-button.next {
+  right: -90px;
 }
 
 .footer {
