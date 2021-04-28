@@ -4,7 +4,7 @@
   font-weight: 300;
 }
 
-.header__play-text, .footer__block-title, .footer__bottom {
+.header__play-text, .order__text, .footer__block-title, .footer__bottom {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -361,6 +361,55 @@ body {
 
 .flickity-prev-next-button.next {
   right: -90px;
+}
+
+.order {
+  background: #242530;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.order__line {
+  height: 265px;
+  width: 2px;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 80px;
+}
+
+.order__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+}
+
+.order__title {
+  font-size: 32px;
+  line-height: 150%;
+  color: #E9E9E9;
+}
+
+.order__marker {
+  width: 104px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 20px;
+}
+
+.order__text {
+  font-size: 18px;
+  line-height: 135%;
+  color: #FFFFFF;
+}
+
+.order__btn {
+  width: 40%;
+  margin-top: 25px;
 }
 
 .footer {
