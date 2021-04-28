@@ -130,6 +130,31 @@
     .flickity-page-dots .is-selected{
         background: #F58122;
     }
+
+    .order{
+        align-items: start;
+        &__line{
+            margin: 53px 5px;
+        }
+        &__block{
+            position: relative;
+            width: 50vw;
+            padding-top: 53px;
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 130%;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &__btn{
+            width: 164px;
+            position: absolute;
+            top: 270px;
+        }
+    }
     
 
 }

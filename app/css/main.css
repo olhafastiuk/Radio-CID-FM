@@ -950,6 +950,30 @@ body {
   .flickity-page-dots .is-selected {
     background: #F58122;
   }
+  .order {
+    align-items: start;
+  }
+  .order__line {
+    margin: 53px 5px;
+  }
+  .order__block {
+    position: relative;
+    width: 50vw;
+    padding-top: 53px;
+  }
+  .order__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .order__text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .order__btn {
+    width: 164px;
+    position: absolute;
+    top: 270px;
+  }
 }
 
 .menu-open + .menu__list {
