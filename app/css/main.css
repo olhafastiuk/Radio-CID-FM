@@ -663,7 +663,7 @@ body {
 }
 
 .program__btn {
-  width: 12vw;
+  width: 138px;
   align-self: center;
   margin-bottom: 80px;
 }
@@ -720,7 +720,7 @@ body {
 
 .news__btn {
   margin-bottom: 80px;
-  width: 12vw;
+  width: 138px;
 }
 
 .news .main-carousel {
@@ -1393,5 +1393,24 @@ body {
   }
   .cooperation__text {
     width: 100%;
+  }
+  .program__gallery {
+    width: 100%;
+    justify-content: center;
+  }
+  .program__gallery-item {
+    margin-bottom: -70px;
+  }
+  .program__gallery-item:nth-child(3) {
+    display: none;
+  }
+  .program__gallery-item:nth-child(4) {
+    display: none;
+  }
+  .program__gallery-item:nth-child(5) {
+    display: none;
+  }
+  .program__gallery-item:nth-child(6) {
+    display: none;
   }
 }
