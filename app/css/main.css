@@ -438,6 +438,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .sliders__text {
@@ -990,7 +992,7 @@ body {
     align-items: start;
   }
   .order__line {
-    margin: 53px 5px;
+    margin: 53px 30px;
   }
   .order__block {
     position: relative;
@@ -1008,7 +1010,7 @@ body {
   .order__btn {
     width: 164px;
     position: absolute;
-    top: 270px;
+    top: 245px;
   }
   .cooperation {
     align-items: start;
@@ -1341,5 +1343,32 @@ body {
   .sliders .carousel-cell {
     width: 50%;
     margin-right: 20px;
+  }
+  .order {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 53px;
+  }
+  .order__line {
+    height: 2px;
+    width: 100%;
+    margin: 0;
+  }
+  .order__block {
+    width: 100%;
+  }
+  .order__btn {
+    width: 164px;
+    position: relative;
+    top: 0;
+    margin-bottom: 40px;
+  }
+  .order__dec-1 {
+    left: -150px;
+    top: -250px;
+  }
+  .order__dec-2 {
+    bottom: -50px;
+    right: 0;
   }
 }

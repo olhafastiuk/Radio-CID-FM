@@ -231,4 +231,31 @@
             margin-right: 20px;
         }
     }
+    .order{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 53px;
+        &__line{
+            height: 2px;
+            width: 100%;
+            margin: 0;
+        }
+        &__block{
+            width: 100%;
+        }
+        &__btn{
+            width: 164px;
+            position: relative;
+            top: 0;
+            margin-bottom: 40px;
+        }
+        &__dec-1{
+            left:-150px;
+            top: -250px;
+        }
+        &__dec-2{
+            bottom: -50px;
+            right:0;
+        }
+    }
 }
