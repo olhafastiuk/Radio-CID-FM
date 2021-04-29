@@ -54,4 +54,67 @@
         margin-left: 50px;
        
     }
+
+    .footer{
+        padding: 0 16px 52px 16px;
+        &__block__btns{
+            position: absolute;
+            left:0;
+            top: 450px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;  
+        }
+        &__block__logo{
+            position: absolute;
+            left:0;
+            top: 52px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row; 
+        } 
+        &-fb{
+            margin-top: 0;
+        }
+        &__top{
+            width: 100%;
+            padding: 140px 0 110px 0;;
+        }
+        &__block__menu{
+            position: relative;
+            order: 2;
+            margin-left: 0;
+        }
+        &__block__contact{
+            position: relative;
+            order:3;
+        }
+        &__block-text{
+            width: 40vw;
+        }
+        &__block-title{
+            font-size: 18px;
+            line-height: 135%;
+        }
+        &__block-text{
+            font-size: 14px;
+            line-height: 140%;
+        }
+        & .page-section{
+            padding: 0;
+        }
+        &__dec-1{
+            display: none;
+        }
+        &__dec-2{
+            right: 4px;
+            bottom: 40px;
+            left: unset;
+            transform: rotate(-30deg);
+
+        }
+
+    }
 }

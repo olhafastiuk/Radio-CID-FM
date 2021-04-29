@@ -1182,4 +1182,64 @@ body {
     width: 110px;
     margin-left: 50px;
   }
+  .footer {
+    padding: 0 16px 52px 16px;
+  }
+  .footer__block__btns {
+    position: absolute;
+    left: 0;
+    top: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer__block__logo {
+    position: absolute;
+    left: 0;
+    top: 52px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-fb {
+    margin-top: 0;
+  }
+  .footer__top {
+    width: 100%;
+    padding: 140px 0 110px 0;
+  }
+  .footer__block__menu {
+    position: relative;
+    order: 2;
+    margin-left: 0;
+  }
+  .footer__block__contact {
+    position: relative;
+    order: 3;
+  }
+  .footer__block-text {
+    width: 40vw;
+  }
+  .footer__block-title {
+    font-size: 18px;
+    line-height: 135%;
+  }
+  .footer__block-text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .footer .page-section {
+    padding: 0;
+  }
+  .footer__dec-1 {
+    display: none;
+  }
+  .footer__dec-2 {
+    right: 4px;
+    bottom: 40px;
+    left: unset;
+    transform: rotate(-30deg);
+  }
 }
