@@ -157,19 +157,22 @@
         align-items: start;
         padding-top: 100px;
         padding-bottom: 0;
+        position: relative;
         &__title{
             font-size: 28px;
             line-height: 130%;
-            margin-top: 52px;
-            position: relative;
-            left: -20vw;
+            position: absolute;
+            top: -50px;
             margin-bottom: 0;
-            padding-bottom: -70px;
-            top: -35px;
+            text-align: center;
+            width: 100vw;
+            left: -55vw;
         }
         &__block{
-            top: -90px;
+            position: relative;
+            top: 0;
             left: -10vw;
+            padding-top: 20px;
         }
         &__text{
             font-size: 16px;
@@ -181,6 +184,8 @@
             margin-bottom: 12px;
         }
         &__btn{
+            position: relative;
+            top: -20px;
             margin-top: 20px;
             width: 160px;
         }

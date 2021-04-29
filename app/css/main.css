@@ -1016,20 +1016,23 @@ body {
     align-items: start;
     padding-top: 100px;
     padding-bottom: 0;
+    position: relative;
   }
   .cooperation__title {
     font-size: 28px;
     line-height: 130%;
-    margin-top: 52px;
-    position: relative;
-    left: -20vw;
+    position: absolute;
+    top: -50px;
     margin-bottom: 0;
-    padding-bottom: -70px;
-    top: -35px;
+    text-align: center;
+    width: 100vw;
+    left: -55vw;
   }
   .cooperation__block {
-    top: -90px;
+    position: relative;
+    top: 0;
     left: -10vw;
+    padding-top: 20px;
   }
   .cooperation__text {
     font-size: 16px;
@@ -1041,6 +1044,8 @@ body {
     margin-bottom: 12px;
   }
   .cooperation__btn {
+    position: relative;
+    top: -20px;
     margin-top: 20px;
     width: 160px;
   }
@@ -1369,6 +1374,24 @@ body {
   }
   .order__dec-2 {
     bottom: -50px;
-    right: 0;
+  }
+  .cooperation__img {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    left: 0;
+  }
+  .cooperation__title {
+    top: -93vw;
+    width: 100%;
+    left: 0;
+  }
+  .cooperation__block {
+    margin-top: 80vw;
+    left: 0;
+    padding-top: 20px;
+  }
+  .cooperation__text {
+    width: 100%;
   }
 }
