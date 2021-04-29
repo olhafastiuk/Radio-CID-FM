@@ -1413,4 +1413,13 @@ body {
   .program__gallery-item:nth-child(6) {
     display: none;
   }
+  .news .main-carousel {
+    width: 100%;
+  }
+  .news .carousel-cell {
+    width: 100%;
+  }
+  .news .flickity-button {
+    display: none;
+  }
 }

@@ -302,5 +302,16 @@
             
         }
     }
+    .news{
+        & .main-carousel{
+            width: 100%;
+        }
+        & .carousel-cell  {
+            width: 100%;
+        }
+        & .flickity-button {
+            display: none;
+        }
+    }
 
 }
