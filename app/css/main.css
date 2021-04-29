@@ -949,16 +949,16 @@ body {
     width: 100vw;
     margin-bottom: 70px;
   }
-  .flickity-button {
+  .sliders .flickity-button {
     display: none;
   }
-  .flickity-page-dots .dot {
+  .sliders .flickity-page-dots .dot {
     background: #525257;
     opacity: 1;
     width: 8px;
     height: 8px;
   }
-  .flickity-page-dots .is-selected {
+  .sliders .flickity-page-dots .is-selected {
     background: #F58122;
   }
   .order {
