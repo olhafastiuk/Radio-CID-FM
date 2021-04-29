@@ -272,7 +272,8 @@
 
 .menu-open{
     transition: all 0.5s ;
-    position: fixed;
+    position: relative;
+    z-index: 10;
     & span{
         transform: rotate(-45deg);
     }

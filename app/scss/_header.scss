@@ -109,6 +109,15 @@
             color: #F58122;
         }
     }
+    & .header__lang-wrapp {
+        display: none;
+    }
+    & .top__inner-fb{
+        display: none;
+    }
+    & .footer__block__contact{
+        display: none;
+    }
 }
 
 .change-lang>.header__lang-eng{

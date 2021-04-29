@@ -15,6 +15,17 @@
         display: none;
     }
 }
+@media (max-width: 700px) {
+    .menu__list .menu__list-item:first-child::after{
+        content: '';
+    display: block;
+    width: 79px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    }
+}
 
 .top{
     position: relative;

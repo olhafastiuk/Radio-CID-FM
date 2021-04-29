@@ -14,26 +14,49 @@ html(lang="en")
     body
         header.header 
             .header__inner 
-                a.logo__img(class="logo" href="#") 
+                a.logo__img( href="#") 
                     picture 
-                        source(media="(max-width: 830px)", srcset="./images/header/logo-tablet.svg")
+                        source(media="(max-width: 1024px)", srcset="./images/header/logo-tablet.svg")
                         img(src="./images/header/logo.svg", alt="logo")
                 nav.menu
                     .header__menu-btn
                         span
-                    ul.menu__list     
+                    ul.menu__list
                         li.menu__list-item
-                             a.menu__list-link(href="#") Головна
+                            a.menu__list-link(href="#") Головна
                         li.menu__list-item
                             a.menu__list-link(href="#") Програми та подкасти
                         li.menu__list-item
-                             a.menu__list-link(href="#") Плейлист
+                            a.menu__list-link(href="#") Плейлист
                         li.menu__list-item
                             a.menu__list-link(href="#") Співпраця
                         li.menu__list-item
                             a.menu__list-link(href="#") Замовити пісню
                         li.menu__list-item
                             a.menu__list-link(href="#") Купити атрибутику
+                    .header__lang-wrapp 
+                        .header__lang
+                            a.header__lang-eng(href="#") ENG 
+                            a.header__lang-ua(href="#") UA 
+                    a.top__inner-fb(href="#")
+                        svg(width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            circle(cx="32" cy="32" r="31.5" stroke="white")
+                            g(clip-path="url(#clip0)")
+                            path(d="M28.0844 48V32.9847H24V27.5784H28.0844V22.9608C28.0844 19.3322 30.4971 16 36.0565 16C38.3074 16 39.9718 16.2098 39.9718 16.2098L39.8406 21.2583C39.8406 21.2583 38.1432 21.2422 36.2909 21.2422C34.2861 21.2422 33.9649 22.1403 33.9649 23.6309V27.5784H40L39.7374 32.9847H33.9649V48H28.0844Z" fill="white")
+                            defs
+                    .footer__block__contact
+                        h3.footer__block-title Контакти
+                        .footer__block-text 
+                            img.footer-icon(src="./images/footer/icon-1.svg", alt="")
+                            .footer-link 
+                                a(href="tel:+3800968696005") +38 (096) 869 6005
+                                a(href="tel:+380332788278") +38 (0332) 78 82 78
+                        .footer__block-text 
+                            img.footer-icon(src="./images/footer/icon-2.svg", alt="")
+                            a.footer-link(href="mailto:radiosidfm@gmail.com") radiosidfm@gmail.com
+                        .footer__block-text 
+                            img.footer-icon(src="./images/footer/icon-3.svg", alt="")
+                            a.footer-link(href="https://www.google.com/maps/place/%D0%A0%D0%B0%D0%B4%D1%96%D0%BE+%D0%A1%D1%96%D0%94+FM/@50.7713975,25.351746,17z/data=!4m13!1m7!3m6!1s0x472597466b3a5acd:0xa0539c616323406a!2s18V,+Konyakina+St,+18%D0%92,+Luts'k,+Volyns'ka+oblast,+43000!3b1!8m2!3d50.7713941!4d25.3539347!3m4!1s0x472597e44f7c0899:0x11761cbf73de1ea0!8m2!3d50.7707096!4d25.3556543") вул.Конякіна,18в. Луцьк. Волинська обл., Україна. 43024
                 .header__lang-wrapp 
                     .header__lang
                         a.header__lang-eng(href="#") ENG 
