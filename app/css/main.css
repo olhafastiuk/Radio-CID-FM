@@ -68,6 +68,7 @@ button:hover {
 body {
   overflow-x: hidden;
   margin: 0 auto;
+  min-width: 375px;
 }
 
 .page-section {
@@ -1166,11 +1167,6 @@ body {
     font-size: 12px;
     line-height: 130%;
   }
-  .header__play-text p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .header__play-text::before {
     font-size: 10px;
     line-height: 120%;
@@ -1179,11 +1175,13 @@ body {
     margin-right: 8px;
   }
   .header__play {
-    width: 110px;
+    width: 30vw;
+    min-width: 110px;
     margin-left: 50px;
   }
   .footer {
     padding: 0 16px 52px 16px;
+    width: 100%;
   }
   .footer__block__btns {
     position: absolute;
@@ -1221,6 +1219,7 @@ body {
   }
   .footer__block-text {
     width: 40vw;
+    min-width: 150px;
   }
   .footer__block-title {
     font-size: 18px;
@@ -1238,7 +1237,7 @@ body {
   }
   .footer__dec-2 {
     right: 4px;
-    bottom: 40px;
+    bottom: 43px;
     left: unset;
     transform: rotate(-30deg);
   }
