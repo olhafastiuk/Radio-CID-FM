@@ -455,7 +455,7 @@ body {
 
 .sliders .carousel-cell {
   width: 25%;
-  margin-left: 5%;
+  margin-left: 30px;
 }
 
 .sliders .carousel-cell img {
@@ -1329,5 +1329,17 @@ body {
   }
   .playBig::after {
     top: 66px;
+  }
+  .sliders__text {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .sliders .main-carousel {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .sliders .carousel-cell {
+    width: 50%;
+    margin-right: 20px;
   }
 }
