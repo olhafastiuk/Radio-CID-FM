@@ -1333,7 +1333,7 @@ body {
   }
   .top__inner__play {
     top: 224px;
-    left: calc((100% - 160px)/2);
+    left: calc((100% - 124px)/2);
   }
   .top__inner__play-external {
     width: 124px;
@@ -1356,6 +1356,7 @@ body {
   }
   .top__inner__slideContainer {
     width: 124px;
+    left: calc((100% - 124px)/2);
   }
   .top__tracks {
     flex-direction: column;
