@@ -52,6 +52,34 @@
         }
         
     }
+    .menu-open + .menu__list{
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        line-height: 140%;
+        flex-direction: column;
+        background: #242530;
+        top: 80px;
+        left: 0;
+        padding: 60px 56px 60px 49px;
+    }
+    
+    .menu-open{
+        transition: all 0.5s ;
+        position: relative;
+        z-index: 10;
+        & span{
+            transform: rotate(-45deg);
+        }
+        &::before{
+            transform: rotate(45deg);
+            margin-bottom: -4px;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            background-color: transparent;
+        }
+    }
 
     .top{
         
@@ -253,37 +281,4 @@
         }
     }
 
-}
-
-
-
-
-.menu-open + .menu__list{
-    display: block;
-    position: absolute;
-    @extend %play;
-    font-size: 20px;
-    line-height: 140%;
-    flex-direction: column;
-    background: #242530;
-    top: 80px;
-    left: 0;
-    padding: 60px 56px 60px 49px;
-}
-
-.menu-open{
-    transition: all 0.5s ;
-    position: relative;
-    z-index: 10;
-    & span{
-        transform: rotate(-45deg);
-    }
-    &::before{
-        transform: rotate(45deg);
-        margin-bottom: -4px;
-    }
-    &::after{
-        transform: rotate(-45deg);
-        background-color: transparent;
-    }
 }

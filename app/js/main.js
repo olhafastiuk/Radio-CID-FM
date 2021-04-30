@@ -1,10 +1,20 @@
 var slider = document.getElementById("MyRange");
 
+var audio = document.getElementById("audio");
+var btn = document.getElementById("music-btn")
+
+btn.onclick = function(){
+    if (audio.paused){
+        audio.play();
+    }else {
+        audio.pause();
+    }
+}
+
 slider.addEventListener("mousemove", function(){
     var x = slider.value;
     var color = 'linear-gradient(90deg, rgb(246,129,34)' + x + '%, rgb(233,233,233)' + x +'%)';
     slider.style.background = color; 
-
 })
 
 $('.header__lang-wrapp').click( function(){
@@ -20,6 +30,7 @@ $('.header__play').click( function(){
 
 $('.top__inner__play').click( function(){
     $('.top__inner__play-btn').toggleClass('playBig');
+    $('.audio').play();
 });
 
 $('.carousel').flickity({

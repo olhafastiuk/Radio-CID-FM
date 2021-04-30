@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 
-button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title, .news__title, .news__item-time, .menu-open + .menu__list {
+button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title, .news__title, .news__item-time {
   font-family: 'Play', sans-serif;
   font-weight: 400;
 }
@@ -928,7 +928,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
   }
-  button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title, .news__title, .news__item-time, .menu-open + .menu__list {
+  button, .top__inner-text, .top__tracks-1, .top__tracks-2, .top__tracks-3, .sliders__text, .order__title, .cooperation__title, .cooperation__text1, .program__title, .program__gallery-title, .news__title, .news__item-time {
     font-family: 'Play', sans-serif;
     font-weight: 400;
   }
@@ -979,6 +979,33 @@ body {
   }
   .footer__block-text {
     width: 190px;
+  }
+  .menu-open + .menu__list {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    line-height: 140%;
+    flex-direction: column;
+    background: #242530;
+    top: 80px;
+    left: 0;
+    padding: 60px 56px 60px 49px;
+  }
+  .menu-open {
+    transition: all 0.5s;
+    position: relative;
+    z-index: 10;
+  }
+  .menu-open span {
+    transform: rotate(-45deg);
+  }
+  .menu-open::before {
+    transform: rotate(45deg);
+    margin-bottom: -4px;
+  }
+  .menu-open::after {
+    transform: rotate(-45deg);
+    background-color: transparent;
   }
   .top__inner {
     padding-top: 40px;
@@ -1160,38 +1187,6 @@ body {
   .news .flickity-prev-next-button.next {
     right: 0;
   }
-}
-
-.menu-open + .menu__list {
-  display: block;
-  position: absolute;
-  font-size: 20px;
-  line-height: 140%;
-  flex-direction: column;
-  background: #242530;
-  top: 80px;
-  left: 0;
-  padding: 60px 56px 60px 49px;
-}
-
-.menu-open {
-  transition: all 0.5s;
-  position: relative;
-  z-index: 10;
-}
-
-.menu-open span {
-  transform: rotate(-45deg);
-}
-
-.menu-open::before {
-  transform: rotate(45deg);
-  margin-bottom: -4px;
-}
-
-.menu-open::after {
-  transform: rotate(-45deg);
-  background-color: transparent;
 }
 
 @media (max-width: 700px) {
